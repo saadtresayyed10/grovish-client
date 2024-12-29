@@ -49,7 +49,7 @@ const HomeNavbar = () => {
 
 const HomeNavbarMobile = () => {
   return (
-    <div className="flex lg:hidden justify-between items-center px-8 py-3 bg-black text-white font-roobert">
+    <div className="flex lg:hidden justify-between items-center px-8 py-4 bg-black text-white font-roobert">
       <Link href="/">
         <h1 className="font-semibold text-4xl">Grovish</h1>
       </Link>
