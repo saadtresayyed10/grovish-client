@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { LogIn, Menu, User2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -30,21 +30,21 @@ const MobileMenu = () => {
         </SheetTrigger>
         <SheetContent
           side="right"
-          className="bg-white flex text-center flex-col justify-center items-center w-full h-[100%] text-black font-unbounded lg:gap-y-16 gap-y-10"
+          className="bg-black flex text-center flex-col justify-center items-center w-full h-[100%] text-white font-roobert lg:gap-y-16 gap-y-10 text-2xl"
         >
-          <Accordion type="single" collapsible className="w-full font-circular">
+          <Accordion type="single" collapsible className="w-full font-roobert">
             <AccordionItem value="item-1">
-              <AccordionTrigger>About</AccordionTrigger>
+              <AccordionTrigger>How It Works</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
-                  <Link href="/about/our-purpose">Our Purpose</Link>
+                  <Link href="/howitworks">Our Purpose</Link>
                   <Link href="/about/founder">Founder</Link>
                   <Link href="https://blog-nxtribe.vercel.app/">Blog</Link>
                 </div>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>What We Offer</AccordionTrigger>
+              <AccordionTrigger>Support</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
                   <Link href="/whatweoffer/it">IT & ITES</Link>
@@ -57,7 +57,7 @@ const MobileMenu = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Workshop</AccordionTrigger>
+              <AccordionTrigger>Resources</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
                   <Link href="/workshop/workshop">Workshops</Link>
@@ -67,18 +67,27 @@ const MobileMenu = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Media</AccordionTrigger>
+              <AccordionTrigger>Portfolio</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
                   <Link href="/media">Videos</Link>
                 </div>
               </AccordionContent>
             </AccordionItem>
-            <button className="w-full text-xl py-4 bg-black text-white mt-6 rounded-xl hover:bg-white uppercase hover:text-black border-2 border-black duration-300">
-              <Link href="/contact" onClick={closeSheet}>
-                Contact
-              </Link>
-            </button>
+            <div className="flex justify-center items-center gap-x-8">
+              <button className="mt-10 relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 py-1.5 text-base font-medium text-white backdrop-blur-3xl">
+                  Register <User2 className="ml-2" />
+                </span>
+              </button>
+              <button className="mt-10 relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 py-1.5 text-base font-medium text-white backdrop-blur-3xl">
+                  Login <LogIn className="ml-2" />
+                </span>
+              </button>
+            </div>
           </Accordion>
         </SheetContent>
       </Sheet>
