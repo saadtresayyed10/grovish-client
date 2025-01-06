@@ -81,7 +81,7 @@ const Footer = () => {
 
 const AboutFooter = () => {
   return (
-    <ul className="flex justify-center items-center flex-col gap-y-2">
+    <ul className="flex justify-start items-start flex-col gap-y-2">
       <li className="font-bold text-xl mb-2">About Grovish</li>
       {aboutFooter.map((tag, idx) => (
         <Link href={tag.href} key={idx}>
@@ -96,7 +96,7 @@ const AboutFooter = () => {
 
 const Legal = () => {
   return (
-    <ul className="flex justify-center items-center flex-col gap-y-2">
+    <ul className="flex justify-start items-start flex-col gap-y-2">
       <li className="font-bold text-xl mb-2">Legal</li>
       {legal.map((tag, idx) => (
         <Link href={tag.href} key={idx}>
@@ -111,7 +111,7 @@ const Legal = () => {
 
 const Social = () => {
   return (
-    <ul className="flex justify-center items-center flex-col gap-y-2">
+    <ul className="flex justify-start items-start flex-col gap-y-2">
       <li className="font-bold text-xl mb-2">Socials</li>
       {socials.map((tag, idx) => (
         <Link
