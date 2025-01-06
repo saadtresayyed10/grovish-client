@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Globe2 } from "lucide-react";
 import Link from "next/link";
 
 const aboutFooter = [
@@ -64,6 +64,16 @@ const Footer = () => {
           <Legal />
           <Social />
         </div>
+      </div>
+      <div className="flex justify-between items-center w-full bg-black text-white font-roobert p-6">
+        <h1 className="flex items-center gap-x-2 text-base">
+          <Globe2 className="w-4 h-4" />
+          English
+        </h1>
+        <h1 className="text-muted-foreground text-base capitalize">
+          &copy; Powered by <span className="font-bold uppercase">Groven</span>{" "}
+          2025
+        </h1>
       </div>
     </div>
   );
