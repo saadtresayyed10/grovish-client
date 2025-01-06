@@ -1,3 +1,4 @@
+import Footer from "./_components/Footer";
 import { HomeNavbar, HomeNavbarMobile } from "./_components/Navbar";
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
@@ -8,7 +9,9 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
         <HomeNavbarMobile />
       </header>
       <main>{children}</main>
-      <footer></footer>
+      <footer className="w-full">
+        <Footer />
+      </footer>
     </>
   );
 };
