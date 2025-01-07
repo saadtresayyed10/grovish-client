@@ -18,7 +18,7 @@ const checks = [
 
 const Hero = () => {
   return (
-    <section className="flex justify-center items-center lg:flex-row w-full lg:p-10 bg-black text-white">
+    <section className="lg:mt-10 flex justify-center items-center lg:flex-row w-full lg:p-10 bg-black text-white">
       <div className="flex justify-start items-start w-[50%] flex-col lg:gap-y-8">
         <h1 className="lg:text-6xl font-tartuffo tracking-wide uppercase font-bold">
           Discover beauty and wellness near you
