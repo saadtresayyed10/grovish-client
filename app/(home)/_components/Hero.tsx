@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 const checks = [
   {
@@ -42,7 +43,14 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-start items-start w-[50%]"></div>
+      <div className="flex justify-start items-start w-[50%]">
+        <Image
+          src="/images/hero.png"
+          alt="Hero Image"
+          width={480}
+          height={480}
+        />
+      </div>
     </section>
   );
 };
