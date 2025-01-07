@@ -51,7 +51,7 @@ const HomeNavbarMobile = () => {
   return (
     <div className="flex lg:hidden justify-between items-center px-8 py-4 bg-black text-white font-roobert">
       <Link href="/">
-        <h1 className="font-semibold text-4xl">Grovish</h1>
+        <h1 className="font-semibold text-4xl font-roobert">Grovish</h1>
       </Link>
       <div className="flex items-center gap-x-4">
         <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
