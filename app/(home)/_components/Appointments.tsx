@@ -6,15 +6,15 @@ const AppointmentsText = () => {
   return (
     <div className="flex justify-center items-center flex-col w-full bg-black">
       <div className="flex justify-center items-center">
-        <p className="text-violet-500 text-center font-roobert lg:text-2xl">
+        <p className="text-violet-500 text-center font-roobert text-2xl">
           1, 28,
         </p>
         <FlipWords
           words={words}
-          className="text-violet-500 text-center font-roobert lg:text-2xl"
+          className="text-violet-500 text-center font-roobert text-2xl"
         />
       </div>
-      <p className="text-violet-500 text-center font-roobert lg:text-xl">
+      <p className="text-violet-500 text-center font-roobert text-xl">
         Total Appointments booked today
       </p>
     </div>

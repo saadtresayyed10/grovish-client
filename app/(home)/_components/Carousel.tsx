@@ -11,9 +11,12 @@ import {
 
 const CarouselComp = () => {
   return (
-    <div className="flex justify-start items-start w-full lg:px-16 px-12">
-      <Carousel className="w-full max-w-xs lg:max-w-4xl my-10">
-        <CarouselContent className="flex lg:gap-6 gap-4">
+    <div className="flex justify-start items-start flex-col gap-y-4 w-full lg:px-16 px-12">
+      <h1 className="lg:text-4xl text-2xl text-white font-semibold font-roobert mt-10">
+        Recommended
+      </h1>
+      <Carousel className="w-full max-w-xs lg:max-w-4xl mb-10">
+        <CarouselContent className="flex lg:gap-10 gap-4">
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem
               key={index}
@@ -29,8 +32,8 @@ const CarouselComp = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
         <CarouselNext />
+        <CarouselPrevious />
       </Carousel>
     </div>
   );
