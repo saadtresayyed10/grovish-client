@@ -23,28 +23,33 @@ const CarouselCard = ({
   title,
 }: CarouselProps) => {
   return (
-    <div className="p-1">
-      <Card>
-        <CardContent className="flex flex-col aspect-square items-center justify-center p-6 font-roobert text-black">
+    <div className="p-10">
+      <Card className="w-[250px] h-[400px] flex flex-col items-center justify-between">
+        <CardContent className="flex flex-col items-center justify-start p-4 font-roobert text-black">
           <p hidden>{id}</p>
-          <Image
-            src={image}
-            alt={title}
-            width={200}
-            height={200}
-            className="w-full object-cover rounded-lg"
-          />
-          <div className="flex justify-start items-start flex-col gap-y-4">
-            <h1 className="lg:text-2xl font-semibold">{title}</h1>
-            <h2 className="lg:text-lg font-semibold">{ratings}</h2>
-            <h3 className="lg:text-sm font-semibold">{location}</h3>
+          <div className="w-[200px] h-[200px] flex justify-center items-center">
+            <Image
+              src={image}
+              alt={title}
+              width={200}
+              height={200}
+              className="object-cover rounded-lg w-full h-full"
+            />
           </div>
-          <div className="w-full flex justify-between items-center">
-            <button className="border border-black px-4 py-1 rounded-full">
+          <div className="flex flex-col items-start justify-between flex-1 mt-4">
+            <h1 className="text-xl font-semibold text-center">{title}</h1>
+            <h2 className="text-lg font-semibold">{ratings}</h2>
+            <h3 className="text-sm font-semibold">{location}</h3>
+          </div>
+          <div className="w-full flex justify-between items-center mt-4">
+            <button className="border border-black px-4 py-1 rounded-full lg:text-xs">
               {tags}
             </button>
-            <Link href={locationLink}>
-              <Pin className="w-2 h-2 stroke-[1]" />
+            <Link
+              href={locationLink}
+              className="text-white bg-black rounded-full p-2"
+            >
+              <Pin className="w-4 h-4 stroke-[1]" />
             </Link>
           </div>
         </CardContent>

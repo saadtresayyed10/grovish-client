@@ -5,7 +5,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-// import CarouselCard from "./CarouselCard";
+import CarouselCard from "./CarouselCard";
+
+import { fakeBarberApi } from "../fake-api";
 
 const CarouselComp = () => {
   return (
@@ -14,20 +16,21 @@ const CarouselComp = () => {
         Recommended
       </h1>
       <Carousel className="w-full max-w-xs lg:max-w-4xl mb-10">
-        <CarouselContent className="flex lg:gap-10 gap-4">
-          {Array.from({ length: 5 }).map((_, index) => (
+        <CarouselContent className="flex lg:gap-10 gap-24">
+          {fakeBarberApi.map((api) => (
             <CarouselItem
-              key={index}
-              className="flex-shrink-0 w-1/2 lg:w-1/3 basis-1/2 lg:basis-1/3"
+              key={api.id}
+              className="flex-shrink-0 w-1 lg:w-1/3 lg:basis-1/3"
             >
-              {/* <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">{index + 1}</span>
-                  </CardContent>
-                </Card>
-              </div> */}
-              {/* <CarouselCard /> */}
+              <CarouselCard
+                id={api.id}
+                image={api.image}
+                location={api.location}
+                locationLink={api.locationLink}
+                ratings={api.ratings}
+                tags={api.tags}
+                title={api.title}
+              />
             </CarouselItem>
           ))}
         </CarouselContent>

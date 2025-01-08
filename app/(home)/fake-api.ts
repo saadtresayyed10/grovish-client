@@ -11,7 +11,7 @@ export const fakeBarberApi = [
   {
     id: 2,
     image: "/images/barbershop-api/barberinn.jpeg",
-    title: "BarberInn Barbershop",
+    title: "BarberInn",
     ratings: "5",
     location: "Kausarbaug, Kondhwa - 411048",
     tags: "Barbershop",
@@ -24,24 +24,6 @@ export const fakeBarberApi = [
     ratings: "5",
     location: "NIBM, Kondhwa Khurd - 411048",
     tags: "Salon",
-    locationLink: "/",
-  },
-  {
-    id: 4,
-    image: "/images/barbershop-api/geetanjali.jpg",
-    title: "Geetanjali",
-    ratings: "5",
-    location: "Korgaon Park",
-    tags: "Barbershop, Salon & Spa",
-    locationLink: "/",
-  },
-  {
-    id: 5,
-    image: "/images/barbershop-api/littlehair.jpg",
-    title: "Littlehair Spa",
-    ratings: "5",
-    location: "Salunke Vihar",
-    tags: "Spa",
     locationLink: "/",
   },
 ];
