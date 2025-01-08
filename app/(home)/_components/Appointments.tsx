@@ -11,6 +11,7 @@ const AppointmentsText = () => {
         </p>
         <FlipWords
           words={words}
+          duration={200}
           className="text-violet-500 text-center font-roobert text-2xl"
         />
       </div>
