@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Pin, Star, StarHalf, Star as StarOutline } from "lucide-react"; 
+import { MapPin, Star, StarHalf, Star as StarOutline } from "lucide-react"; 
 import Image from "next/image";
 import Link from "next/link";
 
@@ -65,14 +65,14 @@ const CarouselCard = ({
             <h3 className="text-sm font-semibold">{location}</h3>
           </div>
           <div className="w-full flex justify-between items-center mt-4">
-            <button className="border border-black px-4 py-1 rounded-full lg:text-xs">
+            <button className="border border-black px-4 py-1 rounded-full text-xs">
               {tags}
             </button>
             <Link
               href={locationLink}
               className="text-white bg-black rounded-full p-2"
             >
-              <Pin className="w-4 h-4 stroke-[1]" />
+              <MapPin className="w-4 h-4 stroke-[1]" />
             </Link>
           </div>
         </CardContent>
