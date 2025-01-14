@@ -1,10 +1,15 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 import { useState } from "react";
-import {motion} from "framer-motion"
-import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
+import { motion } from "framer-motion";
+import {
+  HoveredLink,
+  Menu,
+  MenuItem,
+  ProductItem,
+} from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 
 // const Links = [
@@ -83,8 +88,8 @@ function NavbarMenuLG({ className }: { className?: string }) {
       className={cn("font-roobert", className)}
     >
       <Menu setActive={setActive}>
-        <div className="flex justify-center items-center gap-x-10">
-          <MenuItem setActive={setActive} active={active} item="About">
+        <div className="flex justify-center items-center gap-x-10 font-roobert text-white">
+          <MenuItem setActive={setActive} active={active} item="Resources">
             <div className="flex flex-col space-y-4 text-sm p-6">
               <HoveredLink href="/about/our-purpose">Our Purpose</HoveredLink>
               <HoveredLink href="/about/founder">Founder</HoveredLink>
@@ -93,7 +98,7 @@ function NavbarMenuLG({ className }: { className?: string }) {
               </HoveredLink>
             </div>
           </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="What We Offer">
+          <MenuItem setActive={setActive} active={active} item="Support">
             <div className="text-sm grid grid-cols-2 gap-10 p-10">
               <ProductItem
                 title="IT & ITES"
@@ -121,14 +126,16 @@ function NavbarMenuLG({ className }: { className?: string }) {
               />
             </div>
           </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Workshop">
+          <MenuItem setActive={setActive} active={active} item="How It Works">
             <div className="flex flex-col space-y-4 text-sm p-6">
               <HoveredLink href="/workshop/workshop">Workshops</HoveredLink>
               <HoveredLink href="/workshop/training">Training</HoveredLink>
               <HoveredLink href="/workshop/webinar">Webinar</HoveredLink>
             </div>
           </MenuItem>
-          <Link href="/media" className="text-black">Media</Link>
+          <Link href="/media" className="text-white">
+            Portfolio
+          </Link>
         </div>
       </Menu>
     </motion.div>
