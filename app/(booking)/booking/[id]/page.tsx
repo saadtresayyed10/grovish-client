@@ -2,6 +2,7 @@
 
 import { fakeBarberApi } from "@/app/(home)/fake-api";
 import { useParams } from "next/navigation";
+import BookingForm from "../_components/BookingForm";
 
 const BookService = () => {
   const params = useParams();
@@ -14,9 +15,13 @@ const BookService = () => {
   }
 
   return (
-    <div>
-      {item.title}
-      <br /> {item.location}
+    <div className="flex justify-center items-center flex-col w-full bg-white text-black">
+      <BookingForm
+        location={item.location}
+        timeEnd={item.timeEnd}
+        timeOpen={item.timeOpen}
+        title={item.title}
+      />
     </div>
   );
 };

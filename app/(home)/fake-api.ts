@@ -7,6 +7,8 @@ export const fakeBarberApi = [
     location: "NIBM, Kondhwa - 411048",
     tags: "Barbershop",
     locationLink: "/",
+    timeOpen: 10,
+    timeEnd: 8,
   },
   {
     id: "2",
@@ -16,6 +18,8 @@ export const fakeBarberApi = [
     location: "Kausarbaug, Kondhwa - 411048",
     tags: "Barbershop",
     locationLink: "/",
+    timeOpen: 10,
+    timeEnd: 8,
   },
   {
     id: "3",
@@ -25,6 +29,8 @@ export const fakeBarberApi = [
     location: "NIBM, Kondhwa Khurd - 411048",
     tags: "Salon",
     locationLink: "/",
+    timeOpen: 10,
+    timeEnd: 8,
   },
   {
     id: "4",
@@ -34,6 +40,8 @@ export const fakeBarberApi = [
     location: "Koregaon Park",
     tags: "Salon",
     locationLink: "/",
+    timeOpen: 10,
+    timeEnd: 8,
   },
   {
     id: "5",
@@ -43,5 +51,7 @@ export const fakeBarberApi = [
     location: "Koregaon Park",
     tags: "Barbershop",
     locationLink: "/",
+    timeOpen: 10,
+    timeEnd: 8,
   },
 ];
