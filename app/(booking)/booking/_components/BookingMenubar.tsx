@@ -15,13 +15,13 @@ const BookingMenubar = () => {
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger>
           <IconMenu
-            className="lg:w-6 w-4 lg:h-6 h-4 stroke-[1] cursor-pointer"
+            className="cursor-pointer"
             onClick={() => setIsOpen(true)}
           />
         </SheetTrigger>
         <SheetContent
           side="right"
-          className="flex text-center flex-col justify-center items-center w-full bg-black text-white font-roobert lg:gap-y-16 gap-y-10 border-black border-r-2"
+          className="flex text-center flex-col justify-center items-center w-full bg-black text-white font-roobert gap-y-16 border-black border-r-2"
         >
           <Link href="/" onClick={closeSheet}>
             <h1 className="text-4xl font-semibold">
