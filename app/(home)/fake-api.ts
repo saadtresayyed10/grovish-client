@@ -9,6 +9,8 @@ export const fakeBarberApi = [
     locationLink: "/",
     timeOpen: 10,
     timeEnd: 8,
+    mapLocation:
+      "https://www.openstreetmap.org/export/embed.html?bbox=73.85413169860841%2C18.456407073129235%2C73.91249656677248%2C18.49955211047951&amp;layer=mapnik&amp;marker=18.477980948911057%2C73.88331413269043",
   },
   {
     id: "2",
@@ -20,6 +22,8 @@ export const fakeBarberApi = [
     locationLink: "/",
     timeOpen: 10,
     timeEnd: 8,
+    mapLocation:
+      "https://www.openstreetmap.org/export/embed.html?bbox=73.85413169860841%2C18.456407073129235%2C73.91249656677248%2C18.49955211047951&amp;layer=mapnik&amp;marker=18.477980948911057%2C73.88331413269043",
   },
   {
     id: "3",
@@ -31,6 +35,8 @@ export const fakeBarberApi = [
     locationLink: "/",
     timeOpen: 10,
     timeEnd: 8,
+    mapLocation:
+      "https://www.openstreetmap.org/export/embed.html?bbox=73.85413169860841%2C18.456407073129235%2C73.91249656677248%2C18.49955211047951&amp;layer=mapnik&amp;marker=18.477980948911057%2C73.88331413269043",
   },
   {
     id: "4",
@@ -42,6 +48,8 @@ export const fakeBarberApi = [
     locationLink: "/",
     timeOpen: 10,
     timeEnd: 8,
+    mapLocation:
+      "https://www.openstreetmap.org/export/embed.html?bbox=73.85413169860841%2C18.456407073129235%2C73.91249656677248%2C18.49955211047951&amp;layer=mapnik&amp;marker=18.477980948911057%2C73.88331413269043",
   },
   {
     id: "5",
@@ -53,5 +61,7 @@ export const fakeBarberApi = [
     locationLink: "/",
     timeOpen: 10,
     timeEnd: 8,
+    mapLocation:
+      "https://www.openstreetmap.org/export/embed.html?bbox=73.85413169860841%2C18.456407073129235%2C73.91249656677248%2C18.49955211047951&amp;layer=mapnik&amp;marker=18.477980948911057%2C73.88331413269043",
   },
 ];
