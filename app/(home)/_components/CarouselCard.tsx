@@ -1,16 +1,21 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Star, StarHalf, Star as StarOutline } from "lucide-react"; 
+import {
+  ArrowUpRightSquareIcon,
+  Star,
+  StarHalf,
+  Star as StarOutline,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 interface CarouselProps {
-  id: number;
+  id: string;
   image: string;
   title: string;
   ratings: string;
   location: string;
   tags: string;
-  locationLink: string;
+  bookLink: string;
 }
 
 const renderStars = (rating: number) => {
@@ -35,7 +40,7 @@ const CarouselCard = ({
   id,
   image,
   location,
-  locationLink,
+  bookLink,
   ratings,
   tags,
   title,
@@ -69,10 +74,10 @@ const CarouselCard = ({
               {tags}
             </button>
             <Link
-              href={locationLink}
-              className="text-white bg-black rounded-full p-2"
+              href={bookLink}
+              className="text-white bg-black rounded-full px-2.5 py-1 flex items-center gap-x-2 text-xs"
             >
-              <MapPin className="w-4 h-4 stroke-[1]" />
+              Book <ArrowUpRightSquareIcon className="w-4 h-4 stroke-[1.5]" />
             </Link>
           </div>
         </CardContent>

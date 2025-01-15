@@ -26,7 +26,7 @@ const CarouselComp = () => {
                 id={api.id}
                 image={api.image}
                 location={api.location}
-                locationLink={api.locationLink}
+                bookLink={`/booking/${api.id}`}
                 ratings={api.ratings}
                 tags={api.tags}
                 title={api.title}

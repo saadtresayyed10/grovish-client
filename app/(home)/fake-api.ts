@@ -1,6 +1,6 @@
 export const fakeBarberApi = [
   {
-    id: 1,
+    id: "1",
     image: "/images/barbershop-api/guts.jpg",
     title: "Guts Barbershop",
     ratings: "3.5",
@@ -9,7 +9,7 @@ export const fakeBarberApi = [
     locationLink: "/",
   },
   {
-    id: 2,
+    id: "2",
     image: "/images/barbershop-api/barberinn.jpeg",
     title: "BarberInn",
     ratings: "3",
@@ -18,7 +18,7 @@ export const fakeBarberApi = [
     locationLink: "/",
   },
   {
-    id: 3,
+    id: "3",
     image: "/images/barbershop-api/green.jpg",
     title: "Green",
     ratings: "2.5",
@@ -27,7 +27,7 @@ export const fakeBarberApi = [
     locationLink: "/",
   },
   {
-    id: 4,
+    id: "4",
     image: "/images/barbershop-api/geetanjali.jpg",
     title: "Geetanjali",
     ratings: "4",
@@ -36,7 +36,7 @@ export const fakeBarberApi = [
     locationLink: "/",
   },
   {
-    id: 5,
+    id: "5",
     image: "/images/barbershop-api/littlehair.jpg",
     title: "Little Hair",
     ratings: "4.5",
