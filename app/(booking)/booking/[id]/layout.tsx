@@ -1,7 +1,11 @@
+import BookingNavbar from "../_components/BookingNavbar";
+
 const BookingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
-      <header></header>
+      <header>
+        <BookingNavbar />
+      </header>
       <main>{children}</main>
       <footer></footer>
     </div>
