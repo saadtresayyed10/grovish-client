@@ -2,13 +2,13 @@ interface MapsProps {
   mapLocation: string;
 }
 
-const Maps = ({}: MapsProps) => {
+const Maps = ({ mapLocation }: MapsProps) => {
   return (
     <div>
       <iframe
         width="425"
         height="350"
-        src=""
+        src={mapLocation}
         className="rounded-lg shadow-md border border-black"
       ></iframe>
     </div>
