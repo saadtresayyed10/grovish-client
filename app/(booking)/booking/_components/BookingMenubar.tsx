@@ -20,8 +20,8 @@ const BookingMenubar = () => {
           />
         </SheetTrigger>
         <SheetContent
-          side="left"
-          className="flex text-center flex-col justify-center items-center w-full bg-warning-200 text-black font-absans lg:gap-y-16 gap-y-10 border-black border-r-2"
+          side="right"
+          className="flex text-center flex-col justify-center items-center w-full bg-black text-white font-roobert lg:gap-y-16 gap-y-10 border-black border-r-2"
         >
           <Link href="/" onClick={closeSheet}>
             <h1 className="text-4xl font-semibold">
@@ -31,28 +31,28 @@ const BookingMenubar = () => {
               Home
             </h1>
           </Link>
-          <Link href="/projects" onClick={closeSheet}>
+          <Link href="#book" onClick={closeSheet}>
             <h1 className="text-4xl font-semibold">
               <sup>
                 <span className="font-medium text-xl mr-2">02.</span>
               </sup>
-              Projects
+              Book
             </h1>
           </Link>
-          <Link href="/about" onClick={closeSheet}>
+          <Link href="#" onClick={closeSheet}>
             <h1 className="text-4xl font-semibold">
               <sup>
                 <span className="font-medium text-xl mr-2">03.</span>
               </sup>
-              About
+              Map
             </h1>
           </Link>
-          <Link href="/location" onClick={closeSheet}>
+          <Link href="#" onClick={closeSheet}>
             <h1 className="text-4xl font-semibold">
               <sup>
                 <span className="font-medium text-xl mr-2">04.</span>
               </sup>
-              Location
+              Call
             </h1>
           </Link>
         </SheetContent>
