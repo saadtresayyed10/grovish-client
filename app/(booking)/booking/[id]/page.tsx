@@ -23,7 +23,7 @@ const BookService = () => {
         timeOpen={item.timeOpen}
         title={item.title}
       />
-      <About mapLocation="" />
+      <About mapLocation={item.mapLocation} />
     </div>
   );
 };
