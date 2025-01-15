@@ -3,6 +3,7 @@
 import { fakeBarberApi } from "@/app/(home)/fake-api";
 import { useParams } from "next/navigation";
 import BookingForm from "../_components/BookingForm";
+import About from "../_components/About";
 
 const BookService = () => {
   const params = useParams();
@@ -22,6 +23,7 @@ const BookService = () => {
         timeOpen={item.timeOpen}
         title={item.title}
       />
+      <About mapLocation="" />
     </div>
   );
 };
