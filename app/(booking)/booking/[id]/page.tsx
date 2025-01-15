@@ -4,6 +4,7 @@ import { fakeBarberApi } from "@/app/(home)/fake-api";
 import { useParams } from "next/navigation";
 import BookingForm from "../_components/BookingForm";
 import About from "../_components/About";
+import Footer from "../_components/Footer";
 
 const BookService = () => {
   const params = useParams();
@@ -33,6 +34,14 @@ const BookService = () => {
         title={item.title}
       />
       <About mapLocation={item.mapLocation} />
+      <div className="mt-10 lg:mt-20" />
+      <Footer
+        contact={item.contact}
+        facebook={item.facebook}
+        instagram={item.instagram}
+        mail={item.mail}
+        whatsapp={item.whatsapp}
+      />
     </div>
   );
 };

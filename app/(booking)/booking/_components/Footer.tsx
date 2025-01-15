@@ -1,11 +1,10 @@
 import {
   IconBrandFacebook,
-  IconBrandGmail,
   IconBrandInstagram,
   IconBrandWhatsapp,
   IconPhoneCall,
 } from "@tabler/icons-react";
-import { Globe2 } from "lucide-react";
+import { Globe2, Mail } from "lucide-react";
 import Link from "next/link";
 
 interface FooterProps {
@@ -24,30 +23,30 @@ const Footer = ({
   instagram,
 }: FooterProps) => {
   return (
-    <div className="flex justify-center items-center flex-col lg:gap-y-8 gap-y-4 bg-white text-black">
+    <div className="flex justify-center items-center flex-col gap-y-2 bg-white text-black">
       <div className="flex justify-center items-center gap-x-6 lg:gap-x-10">
         <Link href={contact}>
-          <IconPhoneCall />
+          <IconPhoneCall className="w-4.5 h-4.5 stroke-[1.5]" />
         </Link>
         <Link href={whatsapp}>
-          <IconBrandWhatsapp />
+          <IconBrandWhatsapp className="w-4.5 h-4.5 stroke-[1.5]" />
         </Link>
         <Link href={mail}>
-          <IconBrandGmail />
+          <Mail className="w-4.5 h-4.5 stroke-[1.5]" />
         </Link>
         <Link href={facebook}>
-          <IconBrandFacebook />
+          <IconBrandFacebook className="w-4.5 h-4.5 stroke-[1.5]" />
         </Link>
         <Link href={instagram}>
-          <IconBrandInstagram />
+          <IconBrandInstagram className="w-4.5 h-4.5 stroke-[1.5]" />
         </Link>
       </div>
-      <div className="flex justify-between items-center w-full bg-black text-white font-roobert p-6">
+      <div className="flex justify-center items-center lg:flex-row flex-col w-full text-black font-roobert p-6 lg:gap-x-[800px] gap-y-2">
         <h1 className="flex items-center gap-x-2 text-base cursor-pointer">
           <Globe2 className="w-4 h-4" />
           English
         </h1>
-        <h1 className="text-muted-foreground text-base capitalize">
+        <h1 className="text-black text-base capitalize">
           &copy; Powered by <span className="font-bold uppercase">Groven</span>{" "}
           2025
         </h1>
