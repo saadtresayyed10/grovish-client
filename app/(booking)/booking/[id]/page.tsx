@@ -12,7 +12,16 @@ const BookService = () => {
   const item = fakeBarberApi.find((api) => api.id === id);
 
   if (!item) {
-    return <p>Loading...</p>;
+    return (
+      <div className="flex justify-center items-center w-full min-h-screen bg-white text-black lg:p-20 p-10">
+        <h1 className="font-roobert lg:text-8xl text-6xl text-center font-bold uppercase">
+          404 :&#40;
+          <br />
+          <br />
+          Seems like that ID doesn&apos;t exist in our database.
+        </h1>
+      </div>
+    );
   }
 
   return (
