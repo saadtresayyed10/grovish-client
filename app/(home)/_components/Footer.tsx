@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-between items-center w-full bg-black text-white font-roobert p-6">
-        <h1 className="flex items-center gap-x-2 text-base">
+        <h1 className="flex items-center gap-x-2 text-base cursor-pointer">
           <Globe2 className="w-4 h-4" />
           English
         </h1>
