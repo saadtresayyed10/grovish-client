@@ -18,16 +18,16 @@ const BookingForm = ({
   title,
 }: BookingFormProps) => {
   return (
-    <div className="flex justify-center items-center flex-col lg:gap-y-10 bg-white text-black w-full lg:p-10 font-roobert">
-      <h1 className="font-medium capitalize lg:text-4xl text-2xl">
+    <div className="flex justify-center items-center flex-col gap-y-10 bg-white text-black w-full lg:p-10 p-8 font-roobert">
+      <h1 className="font-medium capitalize lg:text-4xl text-3xl text-center">
         Greetings User, welcome to <span className="font-bold">{title}</span>.
       </h1>
       <BookForm />
-      <div className="flex items-center justify-center lg:gap-x-20">
-        <h4>
+      <div className="flex lg:items-center items-start lg:justify-center justify-start lg:flex-row flex-col lg:gap-x-20 gap-y-2">
+        <h4 className="lg:text-base text-sm">
           <span className="font-semibold">Address</span>: {location}
         </h4>
-        <h4>
+        <h4 className="lg:text-base text-sm">
           <span className="font-semibold">Time</span>: {timeOpen}:00 AM -{" "}
           {timeEnd}:00 PM
         </h4>
@@ -43,8 +43,10 @@ function BookForm() {
   };
   return (
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white text-black">
-      <h2 className="font-bold text-xl text-neutral-800 ">Booking Form</h2>
-      <p className="text-neutral-600 text-sm max-w-sm mt-2 ">
+      <h2 className="font-bold lg:text-xl text-2xl text-neutral-800 ">
+        Booking Form
+      </h2>
+      <p className="text-neutral-600 text-sm max-w-sm mt-2 mb-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
         mollitia.
       </p>
