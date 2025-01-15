@@ -13,7 +13,12 @@ const BookService = () => {
     return <p>Loading...</p>;
   }
 
-  return <div>{item.title}</div>;
+  return (
+    <div>
+      {item.title}
+      <br /> {item.location}
+    </div>
+  );
 };
 
 export default BookService;
