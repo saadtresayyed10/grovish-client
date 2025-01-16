@@ -93,6 +93,7 @@ export const fakeBarberApi = [
 
 export const fakeReviewsApi = [
   {
+    id: 1,
     name: "Saad",
     review:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
@@ -101,6 +102,7 @@ export const fakeReviewsApi = [
     ratings: 10,
   },
   {
+    id: 2,
     name: "Ayman",
     review:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
@@ -109,6 +111,7 @@ export const fakeReviewsApi = [
     ratings: 10,
   },
   {
+    id: 3,
     name: "Amaan",
     review:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
@@ -117,6 +120,7 @@ export const fakeReviewsApi = [
     ratings: 10,
   },
   {
+    id: 4,
     name: "Faraz",
     review:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
