@@ -6,7 +6,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import { fakeBarberApi } from "../fake-api";
+import { fakeReviewsApi } from "../fake-api";
+import ReviewCard from "./ReviewCard";
 
 const Reviews = () => {
   return (
@@ -16,12 +17,17 @@ const Reviews = () => {
       </h1>
       <Carousel className="w-full max-w-xs lg:max-w-4xl mb-10">
         <CarouselContent className="flex lg:gap-10 gap-3">
-          {fakeBarberApi.map((api) => (
+          {fakeReviewsApi.map((api) => (
             <CarouselItem
               key={api.id}
               className="flex-shrink-0 w-1 lg:w-1/3 lg:basis-1/3"
             >
-              <h1>Hello</h1>
+              <ReviewCard
+                date={api.createdAt}
+                name={api.name}
+                ratings={api.ratings}
+                review={api.review}
+              />
             </CarouselItem>
           ))}
         </CarouselContent>
