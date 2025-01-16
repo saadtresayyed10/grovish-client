@@ -90,3 +90,38 @@ export const fakeBarberApi = [
     instagram: "",
   },
 ];
+
+export const fakeReviewsApi = [
+  {
+    name: "Saad",
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
+    createdAt: "12/12/22",
+    updatedAt: "12/12/24",
+    ratings: 10,
+  },
+  {
+    name: "Ayman",
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
+    createdAt: "22/10/22",
+    updatedAt: "12/12/24",
+    ratings: 10,
+  },
+  {
+    name: "Amaan",
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
+    createdAt: "06/12/22",
+    updatedAt: "12/12/24",
+    ratings: 10,
+  },
+  {
+    name: "Faraz",
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
+    createdAt: "08/08/22",
+    updatedAt: "12/12/24",
+    ratings: 10,
+  },
+];
