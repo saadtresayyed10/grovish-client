@@ -6,6 +6,8 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 
+interface ReviewCardProps {}
+
 const ReviewCard = () => {
   return (
     <Card className="bg-gradient-to-tr from-white to-violet-300 text-black px-6 font-roobert">
