@@ -1,6 +1,7 @@
 import AppointmentsText from "./_components/Appointments";
 import CarouselComp from "./_components/Carousel";
 import Hero from "./_components/Hero";
+import Reviews from "./_components/Reviews";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Hero />
       <AppointmentsText />
       <CarouselComp />
+      <Reviews />
     </div>
   );
 };
