@@ -111,10 +111,7 @@ export const ProductItem = ({
 
 export const HoveredLink = ({ children, ...rest }: any) => {
   return (
-    <Link
-      {...rest}
-      className="text-neutral-800 hover:text-black"
-    >
+    <Link {...rest} className="text-neutral-800 hover:text-black">
       {children}
     </Link>
   );

@@ -89,52 +89,54 @@ function NavbarMenuLG({ className }: { className?: string }) {
     >
       <Menu setActive={setActive}>
         <div className="flex justify-center items-center gap-x-10 font-roobert text-white">
-          <MenuItem setActive={setActive} active={active} item="Resources">
+          <MenuItem setActive={setActive} active={active} item="Features">
             <div className="flex flex-col space-y-4 text-sm p-6">
-              <HoveredLink href="/about/our-purpose">Our Purpose</HoveredLink>
-              <HoveredLink href="/about/founder">Founder</HoveredLink>
-              <HoveredLink href="https://blog-nxtribe.vercel.app/">
-                Blog
+              <HoveredLink href="/feature/booking">Bookings</HoveredLink>
+              <HoveredLink href="/feature/barbers">Barbers</HoveredLink>
+              <HoveredLink href="/feature/local-shops">
+                Local Service Centers
               </HoveredLink>
             </div>
           </MenuItem>
           <MenuItem setActive={setActive} active={active} item="Support">
             <div className="text-sm grid grid-cols-2 gap-10 p-10">
               <ProductItem
-                title="IT & ITES"
-                href="/whatweoffer/it"
-                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                description="Innovative tech solutions for seamless growth."
+                title="Chat Support"
+                href="/support/chat"
+                src="/images/navbar/chat.jpg"
+                description="Instant assistance for real-time problem-solving."
               />
               <ProductItem
-                title="Training & Coaching"
-                href="/whatweoffer/training"
-                src="/whatwedo/coaching.jpg"
-                description="Professional growth for individuals and teams."
+                title="Call Support"
+                href="/support/call"
+                src="/images/navbar/phone-call.jpg"
+                description="Expert guidance for seamless customer communication."
               />
               <ProductItem
-                title="Digital Marketing"
-                href="/whatweoffer/digital-marketing"
-                src="/whatwedo/digital.jpg"
-                description="Innovative campaigns maximizing online brand reach."
+                title="AI Support"
+                href="/support/ai"
+                src="/images/navbar/chat-bot.jpg"
+                description="Automated solutions for 24/7 intelligent assistance."
               />
               <ProductItem
-                title="HR & CHRO"
-                href="/whatweoffer/hr"
-                src="/whatwedo/hr&chro.jpg"
-                description="Strategic HR solutions for workforce transformation."
+                title="Mail Support"
+                href="/support/mail"
+                src="/images/navbar/email.jpg"
+                description="Reliable email support for efficient issue resolution."
               />
             </div>
           </MenuItem>
           <MenuItem setActive={setActive} active={active} item="How It Works">
             <div className="flex flex-col space-y-4 text-sm p-6">
-              <HoveredLink href="/workshop/workshop">Workshops</HoveredLink>
-              <HoveredLink href="/workshop/training">Training</HoveredLink>
-              <HoveredLink href="/workshop/webinar">Webinar</HoveredLink>
+              <HoveredLink href="/htw/admin">
+                Admin (Service Owners)
+              </HoveredLink>
+              <HoveredLink href="/htw/customer">Customer</HoveredLink>
+              <HoveredLink href="/htw/relationships">Relationships</HoveredLink>
             </div>
           </MenuItem>
-          <Link href="/media" className="text-white">
-            Portfolio
+          <Link href="/" className="text-white">
+            About
           </Link>
         </div>
       </Menu>

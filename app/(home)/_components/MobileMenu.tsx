@@ -34,43 +34,42 @@ const MobileMenu = () => {
         >
           <Accordion type="single" collapsible className="w-full font-roobert">
             <AccordionItem value="item-1">
-              <AccordionTrigger>How It Works</AccordionTrigger>
+              <AccordionTrigger>Features</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
-                  <Link href="/howitworks">Our Purpose</Link>
-                  <Link href="/about/founder">Founder</Link>
-                  <Link href="https://blog-nxtribe.vercel.app/">Blog</Link>
+                  <Link href="/feature/bookings">Bookings</Link>
+                  <Link href="/feature/barbers">Barbers</Link>
+                  <Link href="/feature/local-shops">Local Service Centers</Link>
                 </div>
               </AccordionContent>
             </AccordionItem>
+
             <AccordionItem value="item-2">
               <AccordionTrigger>Support</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
-                  <Link href="/whatweoffer/it">IT & ITES</Link>
-                  <Link href="/whatweoffer/training">Training & Coaching</Link>
-                  <Link href="/whatweoffer/digital-marketing">
-                    Digital Marketing
-                  </Link>
-                  <Link href="/whatweoffer/hr">HRO & CHRO</Link>
+                  <Link href="/support/chat">Chat Support</Link>
+                  <Link href="/support/call">Call Support</Link>
+                  <Link href="/support/ai">AI Support</Link>
+                  <Link href="/support/mail">Mail Support</Link>
                 </div>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Resources</AccordionTrigger>
+              <AccordionTrigger>How It Works</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
-                  <Link href="/workshop/workshop">Workshops</Link>
-                  <Link href="/workshop/training">Training</Link>
-                  <Link href="/workshop/webinar">Webinar</Link>
+                  <Link href="/htw/admin">Admin (Service Owners) </Link>
+                  <Link href="/htw/customer">Customer</Link>
+                  <Link href="/htw/relationships">Relationships</Link>
                 </div>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Portfolio</AccordionTrigger>
+              <AccordionTrigger>About</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
-                  <Link href="/media">Videos</Link>
+                  <Link href="/">Who are We?</Link>
                 </div>
               </AccordionContent>
             </AccordionItem>
