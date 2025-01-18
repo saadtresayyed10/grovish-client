@@ -99,7 +99,7 @@ export const fakeReviewsApi = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
     createdAt: "12/12/22",
     updatedAt: "12/12/24",
-    ratings: 10,
+    ratings: 5,
   },
   {
     id: 2,
@@ -108,7 +108,7 @@ export const fakeReviewsApi = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
     createdAt: "22/10/22",
     updatedAt: "12/12/24",
-    ratings: 10,
+    ratings: 4,
   },
   {
     id: 3,
@@ -117,7 +117,7 @@ export const fakeReviewsApi = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
     createdAt: "06/12/22",
     updatedAt: "12/12/24",
-    ratings: 10,
+    ratings: 3,
   },
   {
     id: 4,
@@ -126,6 +126,6 @@ export const fakeReviewsApi = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.",
     createdAt: "08/08/22",
     updatedAt: "12/12/24",
-    ratings: 10,
+    ratings: 4,
   },
 ];
