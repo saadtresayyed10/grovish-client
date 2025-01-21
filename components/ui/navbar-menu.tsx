@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { ComponentProps } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -109,7 +109,10 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({
+  children,
+  ...rest
+}: ComponentProps<typeof Link>) => {
   return (
     <Link {...rest} className="text-neutral-800 hover:text-black">
       {children}
