@@ -29,8 +29,8 @@ const ReviewCard = ({ date, name, ratings, review }: ReviewCardProps) => {
         <p>Date: {date}</p>
         <div className="flex items-center gap-x-1">
           <p>Ratings:</p>
-          {Array.from({ length: ratings }, (_, i) => (
-            <Star key={i} className="w-4 h-4 fill-black text-black" />
+          {Array.from({ length: ratings }, (_, idx) => (
+            <Star key={idx} className="w-4 h-4 fill-transparent text-black" />
           ))}
         </div>
       </CardFooter>
