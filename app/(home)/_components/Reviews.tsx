@@ -11,7 +11,7 @@ import ReviewCard from "./ReviewCard";
 
 const Reviews = () => {
   return (
-    <div className="flex justify-start items-start flex-col gap-y-4 w-full lg:px-16 px-4">
+    <div className="flex justify-start items-start flex-col gap-y-4 w-full lg:px-16 px-4 lg:mb-28 mb-24">
       <h1 className="lg:text-6xl text-4xl text-white font-semibold font-roobert mt-10">
         Reviews
       </h1>
