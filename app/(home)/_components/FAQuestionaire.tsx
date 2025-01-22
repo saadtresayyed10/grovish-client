@@ -14,10 +14,10 @@ const FAQuestions = () => {
       className="w-full font-roobert text-white"
     >
       <AccordionItem value="item-1">
-        <AccordionTrigger className="lg:text-4xl">
+        <AccordionTrigger className="lg:text-4xl text-xl">
           How can Grovish boost my revenue and clientele?
         </AccordionTrigger>
-        <AccordionContent className="lg:text-2xl lg:mt-6">
+        <AccordionContent className="lg:text-2xl text-base mt-2 lg:mt-6">
           In addition to saving you time and money, Grovish offers powerful
           salon marketing tools to help you attract new clients and retain
           existing ones. With features like customizable email and SMS
@@ -28,10 +28,10 @@ const FAQuestions = () => {
       </AccordionItem>
 
       <AccordionItem value="item-2">
-        <AccordionTrigger className="lg:text-4xl lg:mt-12">
+        <AccordionTrigger className="lg:text-4xl text-xl lg:mt-12">
           How does Grovish web-app elevate my business?
         </AccordionTrigger>
-        <AccordionContent className="lg:text-2xl lg:mt-6">
+        <AccordionContent className="lg:text-2xl text-base mt-2 lg:mt-6">
           Not only was Grovish designed to streamline your salon or self-care
           business&apos;s operations, enhance efficiency, and deliver a superior
           client experience, but it was also built with a creative aesthetic
@@ -41,10 +41,10 @@ const FAQuestions = () => {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger className="lg:text-4xl lg:mt-12">
+        <AccordionTrigger className="lg:text-4xl text-xl lg:mt-12">
           What sets Grovish apart from other applications?
         </AccordionTrigger>
-        <AccordionContent className="lg:text-2xl lg:mt-6">
+        <AccordionContent className="lg:text-2xl text-base mt-2 lg:mt-6">
           Grovish has a sophisticated, modern look that allows you to showcase
           your style to clients and stand out in a crowd. It was designed to be
           easy and intuitive, so you don&apos;t have to spend hours setting up
