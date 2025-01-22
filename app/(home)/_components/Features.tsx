@@ -1,5 +1,5 @@
 import { features } from "../fake-api";
-import { FeaturesCardLG } from "./FeaturesCard";
+import { FeaturesCard } from "./FeaturesCard";
 
 const Features = () => {
   return (
@@ -10,7 +10,7 @@ const Features = () => {
         Seamless Experience!
       </h1>
       {features.map((feature, idx) => (
-        <FeaturesCardLG
+        <FeaturesCard
           key={idx}
           description={feature.description}
           header={feature.header}

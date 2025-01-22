@@ -66,10 +66,10 @@ const MobileMenu = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>About</AccordionTrigger>
+              <AccordionTrigger>Feedback</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
-                  <Link href="/">Who are We?</Link>
+                  <Link href="/">Leave a Review</Link>
                 </div>
               </AccordionContent>
             </AccordionItem>

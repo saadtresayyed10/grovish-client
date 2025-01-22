@@ -3,6 +3,7 @@ import CarouselComp from "./_components/Carousel";
 import Features from "./_components/Features";
 import Hero from "./_components/Hero";
 import Reviews from "./_components/Reviews";
+import SomeText from "./_components/SomeText";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Hero />
       <AppointmentsText />
       <Features />
+      <SomeText />
       <CarouselComp />
       <Reviews />
     </div>

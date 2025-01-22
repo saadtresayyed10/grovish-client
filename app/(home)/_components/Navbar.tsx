@@ -133,8 +133,8 @@ function NavbarMenuLG({ className }: { className?: string }) {
               <HoveredLink href="/htw/relationships">Relationships</HoveredLink>
             </div>
           </MenuItem>
-          <Link href="/" className="text-white">
-            About
+          <Link href="/review" className="text-white">
+            Feedback
           </Link>
         </div>
       </Menu>

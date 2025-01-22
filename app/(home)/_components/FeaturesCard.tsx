@@ -11,7 +11,7 @@ interface FeaturesCardProps {
   link: string;
 }
 
-const FeaturesCardLG = ({
+const FeaturesCard = ({
   image,
   name,
   icon,
@@ -50,4 +50,4 @@ const FeaturesCardLG = ({
   );
 };
 
-export { FeaturesCardLG };
+export { FeaturesCard };
