@@ -37,9 +37,9 @@ const MobileMenu = () => {
               <AccordionTrigger>Features</AccordionTrigger>
               <AccordionContent onClick={closeSheet}>
                 <div className="flex justify-center items-start flex-col gap-y-2 p-6">
-                  <Link href="/feature/bookings">Bookings</Link>
-                  <Link href="/feature/barbers">Barbers</Link>
-                  <Link href="/feature/local-shops">Local Service Centers</Link>
+                  <Link href="/feature/booking">Bookings</Link>
+                  <Link href="/feature/payments">Payments</Link>
+                  <Link href="/feature/clients">Clients</Link>
                 </div>
               </AccordionContent>
             </AccordionItem>

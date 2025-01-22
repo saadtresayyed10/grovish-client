@@ -92,10 +92,8 @@ function NavbarMenuLG({ className }: { className?: string }) {
           <MenuItem setActive={setActive} active={active} item="Features">
             <div className="flex flex-col space-y-4 text-sm p-6">
               <HoveredLink href="/feature/booking">Bookings</HoveredLink>
-              <HoveredLink href="/feature/barbers">Barbers</HoveredLink>
-              <HoveredLink href="/feature/local-shops">
-                Local Service Centers
-              </HoveredLink>
+              <HoveredLink href="/feature/payments">Payments</HoveredLink>
+              <HoveredLink href="/feature/clients">Clients</HoveredLink>
             </div>
           </MenuItem>
           <MenuItem setActive={setActive} active={active} item="Support">
