@@ -12,7 +12,7 @@ import ReviewCard from "./ReviewCard";
 const Reviews = () => {
   return (
     <div className="flex justify-start items-start flex-col gap-y-4 w-full lg:px-16 px-4">
-      <h1 className="lg:text-4xl text-3xl text-white font-semibold font-roobert mt-10">
+      <h1 className="lg:text-6xl text-4xl text-white font-semibold font-roobert mt-10">
         Reviews
       </h1>
       <Carousel className="w-full max-w-xs lg:max-w-4xl mb-10">

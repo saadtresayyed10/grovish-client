@@ -9,8 +9,8 @@ const HomePage = () => {
     <div className="flex justify-center items-center flex-col gap-y-5 bg-black w-full min-h-screen">
       <Hero />
       <AppointmentsText />
-      <CarouselComp />
       <Features />
+      <CarouselComp />
       <Reviews />
     </div>
   );

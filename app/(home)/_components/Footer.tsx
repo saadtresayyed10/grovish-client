@@ -33,6 +33,10 @@ const legal = [
 
 const socials = [
   {
+    name: "Portfolio",
+    href: "https://groven-portfolio.vercel.app/",
+  },
+  {
     name: "LinkedIn",
     href: "/",
   },
@@ -70,10 +74,14 @@ const Footer = () => {
           <Globe2 className="w-4 h-4" />
           English
         </h1>
-        <h1 className="text-muted-foreground text-base capitalize">
+        <Link
+          href="https://groven-portfolio.vercel.app/"
+          target="_blank"
+          className="text-muted-foreground text-base capitalize"
+        >
           &copy; Powered by <span className="font-bold uppercase">Groven</span>{" "}
           2025
-        </h1>
+        </Link>
       </div>
     </div>
   );
