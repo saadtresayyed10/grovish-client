@@ -20,7 +20,7 @@ const FeaturesCardLG = ({
   link,
 }: FeaturesCardProps) => {
   return (
-    <div className="w-full h-min hidden lg:flex justify-center items-center bg-[#F7F7F7] p-6 rounded-xl shadow-md font-roobert text-black">
+    <div className="w-full h-min flex justify-center items-center bg-[#F7F7F7] lg:p-6 p-10 rounded-xl shadow-md font-roobert text-black flex-col lg:flex-row gap-y-8">
       <div className="min-w-[50%] flex justify-start items-start flex-col gap-y-10 text-left">
         <div className="flex justify-start items-start flex-col gap-y-2 text-left">
           <Image
