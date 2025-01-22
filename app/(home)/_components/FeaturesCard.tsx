@@ -35,9 +35,9 @@ const FeaturesCardLG = ({
           </h3>
         </div>
         <h1 className="font-medium text-4xl capitalize">{header}</h1>
-        <h2 className="font-light text-3xl capitalize">{description}</h2>
+        <h2 className="font-extralight text-2xl capitalize">{description}</h2>
         <Link href={link}>
-          <button className="flex items-center gap-x-2 bg-transparent border border-black px-6 py-3 rounded-full text-2xl uppercase">
+          <button className="flex items-center gap-x-2 hover:gap-x-4 duration-300 bg-transparent border border-black px-6 py-3 rounded-full text-base uppercase">
             More on {name}
             <ArrowRight className="stroke-[1.5]" />
           </button>
