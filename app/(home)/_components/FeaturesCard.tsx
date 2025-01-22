@@ -22,13 +22,13 @@ const FeaturesCardLG = ({
   return (
     <div className="w-full h-min hidden lg:flex justify-center items-center bg-[#F7F7F7] p-6 rounded-xl shadow-md font-roobert text-black">
       <div className="min-w-[50%] flex justify-start items-start flex-col gap-y-10 text-left">
-        <div className="flex justify-start items-start flex-col gap-y-4 text-left">
+        <div className="flex justify-start items-start flex-col gap-y-2 text-left">
           <Image
             src={icon}
             alt={name}
-            width={32}
-            height={32}
-            className="p-2 rounded-md bg-[#FFEBF2]"
+            width={64}
+            height={64}
+            className="px-4 py-2 rounded-lg shadow-sm bg-[#FFEBF2]"
           />
           <h3 className="text-[#FF3479] text-2xl uppercase font-semibold">
             {name}
