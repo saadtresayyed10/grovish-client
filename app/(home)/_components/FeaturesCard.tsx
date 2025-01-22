@@ -30,7 +30,7 @@ const FeaturesCardLG = ({
             height={64}
             className="px-4 py-2 rounded-lg shadow-sm bg-[#FFEBF2]"
           />
-          <h3 className="text-[#FF3479] text-2xl uppercase font-semibold">
+          <h3 className="text-[#FF3479] text-xl uppercase font-semibold">
             {name}
           </h3>
         </div>
