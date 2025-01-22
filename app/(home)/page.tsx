@@ -1,5 +1,6 @@
 import AppointmentsText from "./_components/Appointments";
 import CarouselComp from "./_components/Carousel";
+import Features from "./_components/Features";
 import Hero from "./_components/Hero";
 import Reviews from "./_components/Reviews";
 
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Hero />
       <AppointmentsText />
       <CarouselComp />
+      <Features />
       <Reviews />
     </div>
   );

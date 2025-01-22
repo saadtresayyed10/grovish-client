@@ -129,3 +129,33 @@ export const fakeReviewsApi = [
     ratings: 4,
   },
 ];
+
+export const features = [
+  {
+    icon: "/features/booking-icon.png",
+    name: "Booking",
+    header: "Fast booking that clients rave about",
+    description:
+      "Clients can easily book with you or your team in seconds, no app downloads required.",
+    image: "/features/booking.png",
+    link: "/feature/booking",
+  },
+  {
+    icon: "/features/payment-icon.png",
+    name: "Payment",
+    header: "Make checkout easy for everyone",
+    description:
+      "Accept any client payment with a flat, 2.6% processing rate and no hidden fees.",
+    image: "/features/payment.png",
+    link: "/feature/payment",
+  },
+  {
+    icon: "/features/client-icon.png",
+    name: "Client",
+    header: "Stay on top of your client relationships",
+    description:
+      "Get unlimited appointment reminders and client profiles that automatically update with past appointments, transaction history, notes, and more.",
+    image: "/features/client.png",
+    link: "/feature/client",
+  },
+];
