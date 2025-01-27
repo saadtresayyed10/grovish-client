@@ -34,31 +34,49 @@ const LoginModal = () => {
             />
           </DialogTitle>
           <DialogDescription asChild>
-            <div className="flex justify-start items-start w-full flex-col lg:gap-y-2">
-              <h1 className="text-white lg:text-4xl font-semibold">Login</h1>
+            <div className="flex justify-start items-start w-full flex-col lg:gap-y-3">
+              <h1 className="text-white lg:text-4xl font-semibold">Grovish</h1>
               <h4 className="text-white lg:text-sm font-light">
                 Log in to get started!
               </h4>
             </div>
           </DialogDescription>
         </DialogHeader>
-        <form className="flex justify-start items-start w-full h-min lg:py-4 flex-col lg:gap-y-8">
-          <div className="flex justify-start items-start flex-col lg:gap-y-3">
-            <Label>
-              Email<sup>*</sup>
-            </Label>
-            <Input type="text" placeholder="franklin@gmail.com" />
+        <form>
+          <div className="flex justify-start items-start w-full h-min lg:py-4 flex-col lg:gap-y-8">
+            <div className="flex justify-start items-start flex-col lg:gap-y-3">
+              <Label>
+                Email<sup>*</sup>
+              </Label>
+              <Input type="text" placeholder="franklin@gmail.com" required />
+            </div>
+            <div className="flex justify-start items-start flex-col lg:gap-y-3">
+              <Label>
+                Password<sup>*</sup>
+              </Label>
+              <Input type="password" placeholder="Min. 8 characters" required />
+            </div>
+            <div className="flex justify-between w-full items-center text-center lg:px-10">
+              <p className="text-white cursor-pointer text-xs underline-offset-2 hover:underline duration-300">
+                Create An Account
+              </p>
+
+              <p className="text-white cursor-pointer text-xs underline-offset-2 hover:underline duration-300">
+                Forgot Password?
+              </p>
+            </div>
           </div>
-          <div className="flex justify-start items-start flex-col lg:gap-y-3">
-            <Label>
-              Password<sup>*</sup>
-            </Label>
-            <Input type="password" placeholder="Min. 8 characters" />
-          </div>
+          <DialogFooter>
+            <div className="flex justify-center items-center w-full lg:mt-4">
+              <Button
+                className="bg-transparent text-white border border-violet-500 rounded-full lg:px-8 lg:py-2"
+                type="submit"
+              >
+                Sign In
+              </Button>
+            </div>
+          </DialogFooter>
         </form>
-        <DialogFooter>
-          <Button type="submit">Save changes</Button>
-        </DialogFooter>
       </DialogContent>
     </Dialog>
   );
