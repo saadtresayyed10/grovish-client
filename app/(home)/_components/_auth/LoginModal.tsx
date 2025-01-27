@@ -27,10 +27,10 @@ const LoginModal = () => {
         <DialogHeader>
           <DialogTitle asChild>
             <Image
-              src="/features/client-icon.png" //Replace with Scissor icon
+              src="/images/scissors.png"
               alt="Logo"
-              width={42}
-              height={42}
+              width={48}
+              height={48}
             />
           </DialogTitle>
           <DialogDescription asChild>
