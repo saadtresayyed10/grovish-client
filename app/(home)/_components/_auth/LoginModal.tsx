@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -10,9 +12,26 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { ToastAction } from "@/components/ui/toast";
+import { useToast } from "@/hooks/use-toast";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 const LoginModal = () => {
+  const { toast } = useToast();
+
+  const handleSubmit = () => {
+    toast({
+      title: "Check Your Mail:",
+      description: "A confirmation link has been sent to your email.",
+      action: (
+        <ToastAction className="border border-black" altText="Try again">
+          <ArrowUpRight className="text-black stroke-[1] w-4 h-4" />
+        </ToastAction>
+      ),
+    });
+  };
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -70,7 +89,7 @@ const LoginModal = () => {
             <div className="flex justify-center items-center w-full lg:mt-4">
               <Button
                 className="bg-transparent text-white border border-violet-500 rounded-full lg:px-8 lg:py-2"
-                type="submit"
+                onClick={handleSubmit}
               >
                 Sign In
               </Button>
