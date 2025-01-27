@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Image from "next/image";
 
 const LoginModal = () => {
   return (
@@ -22,27 +23,39 @@ const LoginModal = () => {
           </span>
         </button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] font-roobert bg-black text-white">
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
-          <DialogDescription>
-            Make changes to your profile here. Click save when you&apos;re done.
+          <DialogTitle asChild>
+            <Image
+              src="/features/client-icon.png" //Replace with Scissor icon
+              alt="Logo"
+              width={42}
+              height={42}
+            />
+          </DialogTitle>
+          <DialogDescription asChild>
+            <div className="flex justify-start items-start w-full flex-col lg:gap-y-2">
+              <h1 className="text-white lg:text-4xl font-semibold">Login</h1>
+              <h4 className="text-white lg:text-sm font-light">
+                Log in to get started!
+              </h4>
+            </div>
           </DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
+        <form className="flex justify-start items-start w-full h-min lg:py-4 flex-col lg:gap-y-8">
+          <div className="flex justify-start items-start flex-col lg:gap-y-3">
+            <Label>
+              Email<sup>*</sup>
             </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
+            <Input type="text" placeholder="franklin@gmail.com" />
           </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
+          <div className="flex justify-start items-start flex-col lg:gap-y-3">
+            <Label>
+              Password<sup>*</sup>
             </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
+            <Input type="password" placeholder="Min. 8 characters" />
           </div>
-        </div>
+        </form>
         <DialogFooter>
           <Button type="submit">Save changes</Button>
         </DialogFooter>
